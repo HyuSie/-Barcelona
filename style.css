@@ -52,10 +52,19 @@ section {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
+  color: white; /* Белый текст для контраста */
 }
 
+/* Темная тема 1 (Сине-гранатовая) */
+.theme1 section {
+  background: #002b5c; /* Темно-синий */
+}
+
+/* Темная тема 2 (Гранатово-синяя) */
+.theme2 section {
+  background: #7c0023; /* Темно-гранатовый */
+}
 /* Кнопки */
 button {
   background: #ffcc00;
