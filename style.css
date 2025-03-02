@@ -27,7 +27,7 @@ nav a {
   font-weight: bold;
 }
 
-/* Тема 1: Сине-гранатовая */
+/* Темная тема 1: Сине-гранатовая */
 .theme1 {
   background: #004d98;
   color: white;
@@ -37,7 +37,7 @@ nav a {
   background: #a50044;
 }
 
-/* Тема 2: Гранатово-синяя */
+/* Темная тема 2: Гранатово-синяя */
 .theme2 {
   background: #a50044;
   color: white;
@@ -47,24 +47,44 @@ nav a {
   background: #004d98;
 }
 
-/* Стили для секций */
+/* Стили для блока приветствия */
+.welcome {
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Для темы 1: фон – гранатовый, текст – синий */
+.theme1 .welcome {
+  background-color: #7c0023;
+  color: #002b5c;
+}
+
+/* Для темы 2: фон – синий, текст – гранатовый */
+.theme2 .welcome {
+  background-color: #002b5c;
+  color: #7c0023;
+}
+
+/* Основные стили для секций */
 section {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
   border-radius: 10px;
-  color: white; /* Белый текст для контраста */
 }
 
-/* Темная тема 1 (Сине-гранатовая) */
+/* Для секций в теме 1 */
 .theme1 section {
-  background: #002b5c; /* Темно-синий */
+  background: #003a75;
+  color: white;
 }
 
-/* Темная тема 2 (Гранатово-синяя) */
+/* Для секций в теме 2 */
 .theme2 section {
-  background: #7c0023; /* Темно-гранатовый */
+  background: #8b003d;
+  color: white;
 }
+
 /* Кнопки */
 button {
   background: #ffcc00;
@@ -75,3 +95,8 @@ button {
   font-weight: bold;
 }
 
+/* Стили для ссылок */
+section a {
+  color: inherit;
+  text-decoration: underline;
+}
