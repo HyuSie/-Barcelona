@@ -2,13 +2,25 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-transition: background 0.5s, color 0.5s;
+  transition: background 0.5s, color 0.5s;
+}
+
+/* Темная тема */
+.theme1 {
+  background: #2c2c54;
+  color: white;
+}
+
+/* Светлая тема */
+.theme2 {
+  background: #8d1b3d;
+  color: white;
 }
 
 header {
   text-align: center;
   padding: 20px;
-  background: #5a7285;
+  background: #3c3c7c;
   color: white;
 }
 
@@ -18,6 +30,7 @@ header {
   text-transform: uppercase;
 }
 
+/* Навигация */
 .nav-buttons {
   display: flex;
   justify-content: center;
@@ -45,6 +58,7 @@ header {
   background: #3b4854;
 }
 
+/* Блок приветствия */
 .welcome {
   text-align: center;
   padding: 20px;
@@ -66,9 +80,21 @@ header {
   text-decoration: underline;
 }
 
+/* Кнопка смены темы */
+#themeToggle {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #222;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 footer {
   text-align: center;
   padding: 10px;
-  background: #5a7285;
+  background: #3c3c7c;
   color: white;
 }
