@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <title>ФК Barcelona - Главная</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FC Barcelona - Фан-сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body class="theme1">
-  <header>
-    <h1>ФК Barcelona</h1>
+
+    <header>
+        <h1 class="site-title">FC Barcelona - Фан-сайт</h1>
+    </header>
+
     <nav>
-      <ul>
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="news.html">Новости</a></li>
-        <li><a href="about.html">О клубе</a></li>
-      </ul>
+        <ul class="nav-buttons">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="about.html">О клубе</a></li>
+        </ul>
     </nav>
-  </header>
 
-  <main>
-    <section>
-      <h2>Добро пожаловать!</h2>
-      <p>Это фан-сайт, посвящённый футбольному клубу Barcelona.</p>
-      <button id="interactiveButton">Нажми меня!</button>
-      <p id="message" style="display:none;">Visca Barça! Давайте поддержим нашу команду!</p>
-      <button id="themeToggle">Сменить тему</button>
+    <section class="welcome">
+        <h2>Добро пожаловать!</h2>
+        <p>Это фан-сайт, посвящённый футбольному клубу <strong>Barcelona</strong>.</p>
+        <button id="interactiveButton">Нажми меня!</button>
+        <p id="message" style="display:none;">Visca Barça! Давайте поддержим нашу команду!</p>
     </section>
-  </main>
 
-  <footer>
-    <p>&copy; 2025 ФК Barcelona FanSite</p>
-  </footer>
+    <section class="content">
+        <h2>О клубе</h2>
+        <p>FC Barcelona — один из самых известных футбольных клубов мира. Подробнее можно узнать 
+        <a href="about.html">здесь</a>.</p>
+    </section>
 
-  <script src="script.js"></script>
+    <footer>
+        <p>© 2025 FC Barcelona Фан-сайт. Все права защищены.</p>
+    </footer>
+
 </body>
 </html>
