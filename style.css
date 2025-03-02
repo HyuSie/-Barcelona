@@ -6,11 +6,13 @@ body {
   transition: background 0.5s, color 0.5s;
 }
 
-header {
+/* Шапка и подвал */
+header, footer {
   text-align: center;
   padding: 20px;
 }
 
+/* Навигация */
 nav ul {
   list-style: none;
   padding: 0;
@@ -25,47 +27,69 @@ nav li {
 nav a {
   text-decoration: none;
   font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
-/* Темная тема 1: Сине-гранатовая */
+/* Пастельные темы */
+/* Тема 1: Сине-гранатовая */
 .theme1 {
-  background: #004d98;
-  color: white;
+  background: #5a7285; /* мягкий синий */
+  color: #e5d1d1; /* пастельный текст */
 }
 
 .theme1 header, .theme1 footer {
-  background: #a50044;
+  background: #b76b77; /* приглушённый гранатовый */
 }
 
-/* Темная тема 2: Гранатово-синяя */
-.theme2 {
-  background: #a50044;
+.theme1 nav a {
+  background: #b76b77;
   color: white;
 }
 
-.theme2 header, .theme2 footer {
-  background: #004d98;
+.theme1 nav a:hover {
+  background: #9c5864;
 }
 
-/* Стили для блока приветствия */
+/* Тема 2: Гранатово-синяя */
+.theme2 {
+  background: #b76b77; /* мягкий гранатовый */
+  color: #dbe2e9; /* пастельный текст */
+}
+
+.theme2 header, .theme2 footer {
+  background: #5a7285; /* приглушённый синий */
+}
+
+.theme2 nav a {
+  background: #5a7285;
+  color: white;
+}
+
+.theme2 nav a:hover {
+  background: #495b6d;
+}
+
+/* Блок приветствия */
 .welcome {
   padding: 20px;
   border-radius: 10px;
+  text-align: center;
 }
 
-/* Для темы 1: фон – гранатовый, текст – синий */
+/* Фон и текст в зависимости от темы */
 .theme1 .welcome {
-  background-color: #7c0023;
-  color: #002b5c;
+  background-color: #a78c8c; /* мягкий гранатовый */
+  color: #3b4854; /* приглушённый синий */
 }
 
-/* Для темы 2: фон – синий, текст – гранатовый */
 .theme2 .welcome {
-  background-color: #002b5c;
-  color: #7c0023;
+  background-color: #3b4854; /* мягкий синий */
+  color: #a78c8c; /* пастельный гранатовый */
 }
 
-/* Основные стили для секций */
+/* Основные секции */
 section {
   max-width: 800px;
   margin: 20px auto;
@@ -73,30 +97,75 @@ section {
   border-radius: 10px;
 }
 
-/* Для секций в теме 1 */
+/* Стили секций в зависимости от темы */
 .theme1 section {
-  background: #003a75;
+  background: #6d8398;
   color: white;
 }
 
-/* Для секций в теме 2 */
 .theme2 section {
-  background: #8b003d;
+  background: #a78c8c;
   color: white;
+}
+
+/* Оформление переключателей страниц */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.nav-buttons a {
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+/* Кнопки для переключения страниц */
+.theme1 .nav-buttons a {
+  background: #9c5864;
+  color: white;
+}
+
+.theme1 .nav-buttons a:hover {
+  background: #824650;
+}
+
+.theme2 .nav-buttons a {
+  background: #495b6d;
+  color: white;
+}
+
+.theme2 .nav-buttons a:hover {
+  background: #3b4854;
 }
 
 /* Кнопки */
 button {
-  background: #ffcc00;
+  background: #dac6a3; /* пастельный желтый */
   border: none;
   padding: 10px;
   margin: 10px 0;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
-/* Стили для ссылок */
+button:hover {
+  background: #c4b293;
+}
+
+/* Оформление ссылок */
 section a {
   color: inherit;
   text-decoration: underline;
+  font-weight: bold;
+}
+
+section a:hover {
+  text-decoration: none;
 }
