@@ -1,171 +1,74 @@
-/* Основные стили */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  transition: background 0.5s, color 0.5s;
+transition: background 0.5s, color 0.5s;
 }
 
-/* Шапка и подвал */
-header, footer {
+header {
   text-align: center;
   padding: 20px;
-}
-
-/* Навигация */
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-}
-
-nav li {
-  margin: 0 15px;
-}
-
-nav a {
-  text-decoration: none;
-  font-weight: bold;
-  padding: 10px 15px;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-
-/* Пастельные темы */
-/* Тема 1: Сине-гранатовая */
-.theme1 {
-  background: #5a7285; /* мягкий синий */
-  color: #e5d1d1; /* пастельный текст */
-}
-
-.theme1 header, .theme1 footer {
-  background: #b76b77; /* приглушённый гранатовый */
-}
-
-.theme1 nav a {
-  background: #b76b77;
-  color: white;
-}
-
-.theme1 nav a:hover {
-  background: #9c5864;
-}
-
-/* Тема 2: Гранатово-синяя */
-.theme2 {
-  background: #b76b77; /* мягкий гранатовый */
-  color: #dbe2e9; /* пастельный текст */
-}
-
-.theme2 header, .theme2 footer {
-  background: #5a7285; /* приглушённый синий */
-}
-
-.theme2 nav a {
   background: #5a7285;
   color: white;
 }
 
-.theme2 nav a:hover {
-  background: #495b6d;
+.site-title {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-/* Блок приветствия */
-.welcome {
-  padding: 20px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-/* Фон и текст в зависимости от темы */
-.theme1 .welcome {
-  background-color: #a78c8c; /* мягкий гранатовый */
-  color: #3b4854; /* приглушённый синий */
-}
-
-.theme2 .welcome {
-  background-color: #3b4854; /* мягкий синий */
-  color: #a78c8c; /* пастельный гранатовый */
-}
-
-/* Основные секции */
-section {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* Стили секций в зависимости от темы */
-.theme1 section {
-  background: #6d8398;
-  color: white;
-}
-
-.theme2 section {
-  background: #a78c8c;
-  color: white;
-}
-
-/* Оформление переключателей страниц */
 .nav-buttons {
   display: flex;
   justify-content: center;
   margin: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.nav-buttons li {
+  margin: 0 10px;
 }
 
 .nav-buttons a {
+  display: block;
   text-decoration: none;
   padding: 10px 20px;
-  margin: 5px;
   border-radius: 8px;
   font-weight: bold;
+  background: #495b6d;
+  color: white;
   transition: background 0.3s;
 }
 
-/* Кнопки для переключения страниц */
-.theme1 .nav-buttons a {
-  background: #9c5864;
-  color: white;
-}
-
-.theme1 .nav-buttons a:hover {
-  background: #824650;
-}
-
-.theme2 .nav-buttons a {
-  background: #495b6d;
-  color: white;
-}
-
-.theme2 .nav-buttons a:hover {
+.nav-buttons a:hover {
   background: #3b4854;
 }
 
-/* Кнопки */
-button {
-  background: #dac6a3; /* пастельный желтый */
-  border: none;
-  padding: 10px;
-  margin: 10px 0;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background 0.3s;
+.welcome {
+  text-align: center;
+  padding: 20px;
+  background: #a78c8c;
+  border-radius: 10px;
 }
 
-button:hover {
-  background: #c4b293;
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #dbe2e9;
+  border-radius: 10px;
+  color: #333;
 }
 
-/* Оформление ссылок */
-section a {
-  color: inherit;
+.content a {
+  color: #003a75;
   text-decoration: underline;
-  font-weight: bold;
 }
 
-section a:hover {
-  text-decoration: none;
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #5a7285;
+  color: white;
 }
