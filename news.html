@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>FC Barcelona - Новости</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <!-- Подключение Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-yh7xN8Z+f8smxN/7L1zAtb1Nn/WdfH8s0J+5Ebz1Hsy1pXUrQR1mYw9cw5HePFl1yZ7aKgx6eDZjHqg/0TeF0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="theme1">
   <header>
@@ -15,6 +18,7 @@
         <li><a href="about.html">О клубе</a></li>
       </ul>
     </nav>
+    <div class="clock" id="clock">--:--:--</div>
   </header>
 
   <main>
@@ -22,18 +26,28 @@
       <h2>Последние новости</h2>
       <article>
         <h3>Новый тренер клуба</h3>
-        <p>ФК Barcelona назначил нового тренера. Подробнее <a href="https://www.rbc.ru/sport/29/05/2024/665717989a7947f167018eb3">здесь</a>.</p>
+        <p>ФК Barcelona назначил нового тренера. Подробнее <a href="https://www.rbc.ru/sport/29/05/2024/665717989a7947f167018eb3" target="_blank">здесь</a>.</p>
       </article>
       <article>
         <h3>Подготовка к чемпионату</h3>
-        <p>Команда активно готовится к грядущим матчам. <a href="https://vk.com/video-37112441_456244671">Подробнее</a>.</p>
+        <p>Команда активно готовится к грядущим матчам. <a href="https://vk.com/video-37112441_456244671" target="_blank">Подробнее</a>.</p>
       </article>
+      <button id="loadMoreNews" class="action-button"><i class="fas fa-sync-alt"></i> Загрузить ещё новости</button>
+      <div id="moreNews" style="display:none;">
+        <article>
+          <h3>Новые достижения команды</h3>
+          <p>Команда устанавливает новые рекорды в подготовке к чемпионату. Подробности скоро появятся...</p>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 ФК Barcelona FanSite</p>
   </footer>
+
+  <!-- Кнопка "Наверх" -->
+  <button id="scrollTopBtn" title="Наверх"><i class="fas fa-arrow-up"></i></button>
 
   <script src="script.js"></script>
 </body>
