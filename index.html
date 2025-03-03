@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>FC Barcelona - Главная</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <!-- Подключение иконок Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-yh7xN8Z+f8smxN/7L1zAtb1Nn/WdfH8s0J+5Ebz1Hsy1pXUrQR1mYw9cw5HePFl1yZ7aKgx6eDZjHqg/0TeF0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="theme1">
   <header>
@@ -15,21 +18,62 @@
         <li><a href="about.html">О клубе</a></li>
       </ul>
     </nav>
+    <div class="clock" id="clock">--:--:--</div>
   </header>
 
   <main>
-    <section>
+    <section class="welcome">
       <h2>Добро пожаловать!</h2>
       <p>Это фан-сайт, посвящённый футбольному клубу Barcelona.</p>
-      <button id="interactiveButton">Нажми меня!</button>
+      <button id="interactiveButton" class="action-button"><i class="fas fa-thumbs-up"></i> Нажми меня!</button>
       <p id="message" style="display:none;">Visca Barça! Давайте поддержим нашу команду!</p>
-      <button id="themeToggle">Сменить тему</button>
+      <button id="themeToggle" class="action-button"><i class="fas fa-adjust"></i> Сменить тему</button>
+      <button id="contactOpen" class="action-button"><i class="fas fa-envelope"></i> Связаться</button>
+    </section>
+
+    <!-- Карусель изображений -->
+    <section class="carousel">
+      <div class="carousel-container">
+        <div class="carousel-slide active">
+          <img src="https://via.placeholder.com/800x400?text=Barcelona+1" alt="Barcelona 1">
+        </div>
+        <div class="carousel-slide">
+          <img src="https://via.placeholder.com/800x400?text=Barcelona+2" alt="Barcelona 2">
+        </div>
+        <div class="carousel-slide">
+          <img src="https://via.placeholder.com/800x400?text=Barcelona+3" alt="Barcelona 3">
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <button id="prevSlide"><i class="fas fa-chevron-left"></i></button>
+        <button id="nextSlide"><i class="fas fa-chevron-right"></i></button>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 ФК Barcelona FanSite</p>
+    <p>&copy; 2025 FC Barcelona FanSite</p>
   </footer>
+
+  <!-- Кнопка "Наверх" -->
+  <button id="scrollTopBtn" title="Наверх"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- Модальное окно для связи -->
+  <div id="contactModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="modalClose">&times;</span>
+      <h2>Связаться с нами</h2>
+      <form id="contactForm">
+        <label for="name">Имя:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="messageInput">Сообщение:</label>
+        <textarea id="messageInput" name="messageInput" required></textarea>
+        <button type="submit" class="action-button">Отправить</button>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
