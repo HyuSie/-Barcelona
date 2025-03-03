@@ -74,6 +74,27 @@ section {
   text-align: center;
 }
 
+/* Новые секции */
+.upcoming-matches, .social-media {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 2em;
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffcc00;
+}
+
 /* Кнопки */
 .action-button {
   background: #ffcc00;
@@ -83,7 +104,8 @@ section {
   cursor: pointer;
   font-weight: bold;
   border-radius: 5px;
-  transition: background 0.3s, transform 0.3s;
+  transition: background 0.3s, transform 0.
+3s;
 }
 
 .action-button:hover {
@@ -92,6 +114,7 @@ section {
 }
 
 /* Темы */
+/* Тёмная тема 1 */
 .theme1 {
   background: #004d98;
   color: white;
@@ -102,6 +125,7 @@ section {
   background: #a50044;
 }
 
+/* Тёмная тема 2 */
 .theme2 {
   background: #a50044;
   color: white;
@@ -112,7 +136,7 @@ section {
   background: #004d98;
 }
 
-/* Третья тема – светлая */
+/* Светлая тема (theme3) */
 .theme3 {
   background: #f0f0f0;
   color: #333;
@@ -123,6 +147,30 @@ section {
   background: #fff;
   color: #333;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Исправление видимости ссылок и секций для theme3 */
+.theme3 nav a {
+  color: #333;
+}
+
+.theme3 nav a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.theme3 section {
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.theme3 .action-button {
+  background: #333;
+  color: #fff;
+}
+
+.theme3 .action-button:hover {
+  background: #555;
 }
 
 /* Футер */
@@ -260,8 +308,8 @@ footer {
   nav li {
     margin: 10px 0;
   }
-  .
-carousel-controls button {
+  .carousel-controls button {
     padding: 8px;
   }
 }
+
