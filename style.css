@@ -76,8 +76,7 @@ ul.achievements {
   list-style: none; /* убираем стандартные маркеры */
   padding-left: 0;
 }
-ul.
-achievements li {
+ul.achievements li {
   margin: 10px 0;
   /* Можно добавить дополнительные отступы, если нужно */
 }
