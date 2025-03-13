@@ -304,4 +304,19 @@ footer {
     padding: 8px;
   }
 }
+.stickers-list {
+  list-style: none;
+  padding: 0;
+}
 
+.stickers-list li {
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.stickers-list li::before {
+  content: "";
+  margin-right: 10px;
+}
